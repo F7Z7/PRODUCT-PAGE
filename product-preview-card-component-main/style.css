@@ -1,0 +1,11 @@
+.parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 50%;
+    text-align: center;
+    line-height: 1.4;
+
+
+}
