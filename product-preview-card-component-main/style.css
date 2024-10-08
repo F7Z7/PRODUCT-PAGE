@@ -71,3 +71,24 @@ body {
     cursor: pointer;
     background-color: #1a4031;
 }
+.parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.parent h2{
+    display: grid;
+
+}
+.content{
+    background-color: white;
+}
+#img_pr{
+
+  display: grid;
+  grid-template-columns: 100px 200px 1fr;
+
+
+}
+
