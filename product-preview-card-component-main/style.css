@@ -1,15 +1,17 @@
+
 * {
-    background-color: #f2ebe3;
+
     font-family: "Britannic Bold";
     color: #333333;
 }
 
 body {
+    background-color: #f2ebe3;
     border-style: solid;
     display: grid;
     place-content: center;
     min-height: 100vh;
-    margin:2rem;
+    margin: 2rem;
 }
 
 #img_pr {
@@ -17,7 +19,8 @@ body {
     height: auto;
 
 }
-.parent{
+
+.parent {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,12 +34,15 @@ body {
     font-weight: 700;
     font-style: normal;
 
+
 }
 
 .parent h1 {
     font-family: "Fraunces", serif;
     font-weight: 700;
     font-style: normal;
+
+
 }
 
 .parent p {
@@ -59,47 +65,57 @@ body {
     font-style: normal;
     padding-right: 10px;
 }
-#old_price{
+
+#old_price {
     font-family: "Fraunces", serif;
     font-weight: 500;
     font-style: normal;
     padding-right: 10px;
     text-decoration: line-through;
 }
-#btn{
-    width: 200px;
-    height: 75px;
+
+.butn {
+    display: grid;
+    place-content: center;
+    margin-bottom: 1rem;
+}
+
+#btn {
+    width: 300px;
+    height: 50px;
     border-radius: 10px;
     background-color: #3d8168;
     color: white;
     font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
 
 }
-#btn:hover{
+
+#btn:hover {
     cursor: pointer;
     background-color: #1a4031;
 }
-.parent{
+
+.parent {
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
-.parent h2{
+
+.parent h2 {
     display: grid;
 
 }
-.content{
+
+.content {
     background-color: white;
+    margin: 1rem;
+    border-radius: 10px;
 }
 
-@media  (min-width: 600px) {
-    .parent{
 
-  grid-template-columns: 1fr 1fr 1fr;
-
-    }
-
-    
-}
 
