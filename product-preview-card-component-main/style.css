@@ -11,14 +11,17 @@ body {
     display: grid;
     place-content: center;
     min-height: 100vh;
-    margin: 2rem;
+
 }
 
 #img_pr {
-    width: 250px;
-    height: auto;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    border-radius: 20px;
 
 }
+
 
 .parent {
     display: flex;
@@ -26,6 +29,9 @@ body {
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
+    padding: 24px 16px 24px 16px;
+    flex-direction: column;
+
 }
 
 .parent h2 {
@@ -33,6 +39,9 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-style: normal;
+    font-size: 80%;
+    letter-spacing: 2px;
+    display: grid;
 
 
 }
@@ -58,7 +67,7 @@ body {
 }
 
 #new_price {
-    font-size: 45px;
+    font-size: 30px;
     color: #3c8167;
     font-family: "Fraunces", serif;
     font-weight: 700;
@@ -72,6 +81,7 @@ body {
     font-style: normal;
     padding-right: 10px;
     text-decoration: line-through;
+    opacity: 50%;
 }
 
 .butn {
@@ -99,23 +109,17 @@ body {
     background-color: #1a4031;
 }
 
-.parent {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.parent h2 {
-    display: grid;
-
-}
-
 .content {
     background-color: white;
     margin: 1rem;
     border-radius: 10px;
+    padding: 24px 16px 24px 16px;
 }
 
+@media (min-width: 500px) {
+    .parent h1 {
 
+    }
+
+}
 
