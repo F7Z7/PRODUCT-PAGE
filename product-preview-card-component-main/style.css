@@ -1,51 +1,37 @@
-
-* {
-    font-family: "Britannic Bold";
+body {
+    background-color: #f2ebe3;
 }
 
-body {
+.parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 
-    background-color: #f2ebe3;
-    display: grid;
-    place-content: center;
-    min-height: 100vh;
-    border-width: 1rem;
 
+}
+
+.content {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
 }
 
 .img {
-    width: 101%;
-    height: auto;
+    width: 100%;
     overflow: hidden;
-    vertical-align: top;
 
 }
 
 #img_pr {
     width: 100%;
-    display: grid;
-    place-content: center;
-    border-radius: 20px;
-    height: auto;
     object-fit: contain;
+    height: 300px;
 
-}
 
-
-.parent {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 16px 24px 16px;
-    flex-direction: column;
-    max-width: 500px;
-    background-color: #3c8167;
-}
-
-.content {
-    display: flex;
-
-    background-color: red;
 }
 
 .parent h2 {
@@ -56,7 +42,7 @@ body {
     font-size: 80%;
     letter-spacing: 2px;
     display: grid;
-    color: black;
+
 
 }
 
@@ -64,7 +50,6 @@ body {
     font-family: "Fraunces", serif;
     font-weight: 700;
     font-style: normal;
-    color: black;
 
 
 }
@@ -74,7 +59,6 @@ body {
     font-weight: 500;
     font-style: normal;
     font-size: 14px;
-    color: black;
 }
 
 .price_tag {
@@ -116,8 +100,6 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-style: normal;
-
-
 }
 
 #btn:hover {
@@ -125,12 +107,13 @@ body {
     background-color: #1a4031;
 }
 
-
-@media (min-width: 300px) {
-    #img_pr {
-        object-fit: cover;
-        height: 300px;
+@media (max-width: 600px) {
+    .parent {
+        flex-direction: column;
     }
 
+    #img_pr {
+        object-fit: cover;
+        height: 315px
+    }
 }
-
