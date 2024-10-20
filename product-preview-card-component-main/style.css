@@ -16,13 +16,24 @@ body {
 
 }
 
+#img_pr {
+    object-fit: cover;
+    height: 200px;
+    border-radius: 10px 0px 0px 10px;
+    width: 350px;
+    overflow: hidden;
+
+
+}
+
 .content {
     background-color: white;
-    flex: 1; /* Allows the content to grow to match the height of the image */
+    flex: 1;
     padding: 15px;
     max-width: 500px;
     display: flex;
     flex-direction: column;
+    border-radius: 0px 10px 10px 0px;
 }
 
 .parent h2 {
@@ -106,18 +117,17 @@ body {
         flex-direction: column;
         max-width: 350px;
     }
-}
 
-#img_pr {
-    object-fit:cover;
-    height: 200px;
-    border-radius: 10px 10px 0px 0px;
-    width: 350px;
-    overflow: hidden;
+    #img_pr {
+        object-fit: cover;
+        height: 200px;
+        border-radius: 10px 10px 0px 0px;
+        width: 350px;
+        overflow: hidden;
 
+    }
 
-}
-
-.content {
-    border-radius: 0px 0px 10px 10px;
+    .content {
+        border-radius: 0px 0px 10px 10px;
+    }
 }
